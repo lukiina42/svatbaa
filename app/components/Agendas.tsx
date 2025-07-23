@@ -18,7 +18,7 @@ const Agendas = () => {
         <a
           href={CALENDAR_URL}
           target={"_blank"}
-          className="px-8 py-4 transition-all text-lg font-semibold w-full rounded-lg bg-[#6621a6] hover:bg-[#4b157a] outline-[#6621a6] text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+          className="px-8 py-4 transition-all text-lg font-semibold w-full rounded-lg bg-[#7a494d] hover:bg-[#4b157a] outline-[#7a494d] text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
           rel="noreferrer"
         >
           Uložit do kalendáře
@@ -27,7 +27,7 @@ const Agendas = () => {
 
         <div className={'flex flex-col md:gap-8 gap-4 mt-24'}>
                 <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
-                    <div className="col-span-1 text-gray-400 text-left font-sans">
+                    <div className="col-span-1 text-gray-700 text-left font-sans">
                         PŘÍJEZD HOSTŮ
                     </div>
                     <div className="col-span-1 text-gray-700 text-right font-sans">
@@ -35,8 +35,8 @@ const Agendas = () => {
                     </div>
                 </div>
               <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
-                <div className="col-span-1 text-gray-400 text-left font-sans">
-                  OBŘAD
+                <div className="col-span-1 text-gray-700 text-left font-sans">
+                  OBŘAD + FOCENÍ
                 </div>
                 <div className="col-span-1 text-gray-700 text-right font-sans">
                   11:30
@@ -44,8 +44,8 @@ const Agendas = () => {
               </div>
 
                 <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
-                    <div className="col-span-1 text-gray-400 text-left font-sans">
-                        SLAVNOSTNÍ OBĚD
+                    <div className="col-span-1 text-gray-700 text-left font-sans">
+                        OBĚD
                     </div>
                     <div className="col-span-1 text-gray-700 text-right font-sans">
                         13:00
@@ -53,20 +53,29 @@ const Agendas = () => {
                 </div>
 
             <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl  font-black">
-                <div className="col-span-1 text-gray-400 text-left font-sans">
+                <div className="col-span-1 text-gray-700 text-left font-sans">
                     KRÁJENÍ DORTU
                 </div>
                 <div className="col-span-1 text-gray-700 text-right font-sans">
-                    14:00
+                    15:00
                 </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl  font-black">
-                <div className="col-span-1 text-gray-400 text-left font-sans">
-                    KRÁJENÍ DORTU, HRY A PARTYING, VEČEŘE
+                <div className="col-span-1 text-gray-700 text-left font-sans">
+                    PRVNÍ TANEC
                 </div>
                 <div className="col-span-1 text-gray-700 text-right font-sans">
                     17:30
+                </div>
+            </div>
+
+              <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl  font-black">
+                <div className="col-span-1 text-gray-700 text-left font-sans">
+                    RAUT
+                </div>
+                <div className="col-span-1 text-gray-700 text-right font-sans">
+                    18:00
                 </div>
             </div>
         </div>

@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes liza-slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-liza-slide-in {
+  animation: liza-slide-in 0.7s ease-in-out;
+}
+
+@keyframes liza-slide-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.animate-liza-slide-out {
+  animation: liza-slide-out 0.7s ease-in forwards;
+}
+
+.liza-tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+.liza-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Update custom colors */
+.bg-\[\#7a494d\] { background-color: #7a494d !important; }
+.text-\[\#7a494d\] { color: #7a494d !important; }
+.border-\[\#7a494d\] { border-color: #7a494d !important; }
+.outline-\[\#7a494d\] { outline-color: #7a494d !important; }
+.bg-\[\#a6b3a9\] { background-color: #a6b3a9 !important; }
+
+/* Tooltip arrow color */
+.border-t-\[\#7a494d\] { border-top-color: #7a494d !important; }
+
+/* Update gradients if used */
+[style*="linear-gradient(62deg, #a6b3a9 0%, #e6e6fa 45%)"] {
+  background-image: linear-gradient(62deg, #a6b3a9 0%, #e6e6fa 45%) !important;
+}

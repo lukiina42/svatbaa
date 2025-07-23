@@ -61,7 +61,7 @@
 //         />
 //         <button
 //           onClick={onClose}
-//           className="absolute top-2 right-2 text-white text-3xl hover:text-[#6621a6]"
+//           className="absolute top-2 right-2 text-white text-3xl hover:text-[#7a494d]"
 //           aria-label="Close"
 //         >
 //           ×

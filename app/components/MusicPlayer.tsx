@@ -45,7 +45,7 @@ const MusicPlayer = ({ play: playParent }: MusicPlayerProps) => {
 
       <div className=" fixed bottom-0 right-0 mr-3 mb-3 md:mr-8 md:mb-8">
         <button
-          className="rounded-full drop-shadow-md bg-[#6621a6] text-4xl w-9 h-9  md:w-11 md:h-11 flex items-center justify-center"
+          className="rounded-full drop-shadow-md bg-[#7a494d] text-4xl w-9 h-9  md:w-11 md:h-11 flex items-center justify-center"
           onClick={() => {
             play ? onPause() : onPlay();
           }}

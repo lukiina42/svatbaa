@@ -42,7 +42,7 @@ const LocationMap = () => {
                 <a
                   href={MAP_REDIRECT_URL}
                   target="_blank"
-                  className="px-5 py-2 transition-all text-lg font-semibold rounded-md bg-[#6621a6] hover:bg-[#4b157a] outline-[#6621a6] text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+                  className="px-5 py-2 transition-all text-lg font-semibold rounded-md bg-[#7a494d] hover:bg-[#4b157a] outline-[#7a494d] text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
                   rel="noreferrer"
                 >
                   Otevřít mapu

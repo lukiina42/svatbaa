@@ -60,9 +60,9 @@ const DebitCard = ({ bank, accountNumber, name }: DebitCardProps) => {
 
   return (
     <div
-      className=" flex-shrink-0 rounded-[20px] bg-[#b8ddcb] shadow-lg shadow-[#6621a6] w-full md:w-[430px] h-52 md:h-64 p-6"
+      className=" flex-shrink-0 rounded-[20px] bg-[#a6b3a9] shadow-lg shadow-[#7a494d] w-full md:w-[430px] h-52 md:h-64 p-6"
       style={{
-        backgroundImage: "linear-gradient(62deg, #b8ddcb 0%, #e6e6fa 45%)",
+        backgroundImage: "linear-gradient(62deg, #a6b3a9 0%, #e6e6fa 45%)",
       }}
     >
       <div className="flex flex-col justify-end h-full text-gray-800 font-sans">
