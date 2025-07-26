@@ -25,17 +25,17 @@ const Agendas = () => {
         </a>
       </div>
 
-        <div className={'flex flex-col md:gap-8 gap-4 mt-24'}>
-                <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
-                    <div className="col-span-1 text-gray-700 text-left font-sans">
+        <div className={'flex flex-col md:gap-8 gap-4 mt-24 px-8'}>
+                <div className="grid grid-cols-3 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
+                    <div className="col-span-2 text-gray-700 text-left font-sans">
                         PŘÍJEZD HOSTŮ
                     </div>
                     <div className="col-span-1 text-gray-700 text-right font-sans">
                         10:30
                     </div>
                 </div>
-              <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
-                <div className="col-span-1 text-gray-700 text-left font-sans">
+              <div className="grid grid-cols-3 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
+                <div className="col-span-2 text-gray-700 text-left font-sans">
                   OBŘAD + FOCENÍ
                 </div>
                 <div className="col-span-1 text-gray-700 text-right font-sans">
@@ -43,8 +43,8 @@ const Agendas = () => {
                 </div>
               </div>
 
-                <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
-                    <div className="col-span-1 text-gray-700 text-left font-sans">
+                <div className="grid grid-cols-3 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
+                    <div className="col-span-2 text-gray-700 text-left font-sans">
                         OBĚD
                     </div>
                     <div className="col-span-1 text-gray-700 text-right font-sans">
@@ -52,8 +52,8 @@ const Agendas = () => {
                     </div>
                 </div>
 
-            <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl  font-black">
-                <div className="col-span-1 text-gray-700 text-left font-sans">
+            <div className="grid grid-cols-3 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl  font-black">
+                <div className="col-span-2 text-gray-700 text-left font-sans">
                     KRÁJENÍ DORTU
                 </div>
                 <div className="col-span-1 text-gray-700 text-right font-sans">
@@ -61,8 +61,8 @@ const Agendas = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl  font-black">
-                <div className="col-span-1 text-gray-700 text-left font-sans">
+            <div className="grid grid-cols-3 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl  font-black">
+                <div className="col-span-2 text-gray-700 text-left font-sans">
                     PRVNÍ TANEC
                 </div>
                 <div className="col-span-1 text-gray-700 text-right font-sans">
@@ -70,8 +70,8 @@ const Agendas = () => {
                 </div>
             </div>
 
-              <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl  font-black">
-                <div className="col-span-1 text-gray-700 text-left font-sans">
+              <div className="grid grid-cols-3 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl  font-black">
+                <div className="col-span-2 text-gray-700 text-left font-sans">
                     RAUT
                 </div>
                 <div className="col-span-1 text-gray-700 text-right font-sans">

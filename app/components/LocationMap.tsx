@@ -37,7 +37,7 @@ const LocationMap = () => {
               <h4 className="text-xl md:text-2xl mb-4 font-sans font-semibold text-gray-700">
                 {MAP_TITLE}
               </h4>
-              <p className="mb-16 md:mb-10 font-sans">{MAP_ADDRESS}</p>
+              <p className="mb-8 font-sans">{MAP_ADDRESS}</p>
               <div className="flex md:justify-start justify-center">
                 <a
                   href={MAP_REDIRECT_URL}
@@ -48,7 +48,107 @@ const LocationMap = () => {
                   Otevřít mapu
                 </a>
               </div>
+              
+              {/* Accommodation Section - Hidden on mobile */}
+              <div className="mt-16 hidden md:block">
+                <h4 className="text-xl md:text-2xl mb-4 font-sans font-semibold text-gray-700">
+                  Ubytování
+                </h4>
+                <div className="text-gray-600 font-sans leading-relaxed space-y-3">
+                  <p>
+                    <strong>Pro rodinu:</strong> Ubytování je zajištěno v objektu! 🏠
+                  </p>
+                  <p>
+                    <strong>Pro přátele:</strong> Preferujeme spaní na zahradě ve stanech nebo obytných vozech! 🏕️
+                  </p>
+                  <p className="text-sm">
+                    Pokud nechcete spát venku, můžete si vybrat z těchto hotelů a zajistit si to sami 😄:
+                  </p>
+                  <ul className="text-sm space-y-2 text-left">
+                    <li>
+                      • <a 
+                          href="https://www.booking.com/hotel/cz/rychta-netolice.cs.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaDqIAQGYAQW4AQfIAQ3YAQHoAQH4AQyIAgGoAgO4Ao7YhMQGwAIB0gIkZGQ3MjBiMDUtYWFmYi00NjA1LWI2ZWEtMzJlN2VhZDRjNmRk2AIG4AIB&sid=e78b70fc82574a9a40bd625c5bf00734&all_sr_blocks=117514708_226150141_1_42_0&checkin=2025-09-06&checkout=2025-09-07&dest_id=-552644&dest_type=city&dist=0&group_adults=1&group_children=0&hapos=1&highlighted_blocks=117514708_226150141_1_42_0&hpos=1&matching_block_id=117514708_226150141_1_42_0&nflt=review_score%3D80&no_rooms=1&req_adults=1&req_children=0&room1=A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=117514708_226150141_1_42_0__3900&srepoch=1753295951&srpvid=21418313b6f1067f&type=total&ucfs=1&activeTab=main"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-[#7a494d] hover:underline"
+                        >
+                          Rychta Netolice
+                        </a>
+                    </li>
+                    <li>
+                      • <a 
+                          href="https://www.booking.com/hotel/cz/ubytovani-v-soukromi-jaronice.cs.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaDqIAQGYAQW4AQfIAQ3YAQHoAQH4AQyIAgGoAgO4Ao7YhMQGwAIB0gIkZGQ3MjBiMDUtYWFmYi00NjA1LWI2ZWEtMzJlN2VhZDRjNmRk2AIG4AIB&sid=e78b70fc82574a9a40bd625c5bf00734&all_sr_blocks=653256004_343457598_2_0_0&checkin=2025-09-06&checkout=2025-09-07&dest_id=-552644&dest_type=city&dist=0&group_adults=1&group_children=0&hapos=2&highlighted_blocks=653256004_343457598_2_0_0&hpos=2&matching_block_id=653256004_343457598_2_0_0&nflt=review_score%3D80%3Bhotelfacility%3D8&no_rooms=1&req_adults=1&req_children=0&room1=A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=653256004_343457598_2_0_0__4000&srepoch=1753296293&srpvid=21418313b6f1067f&type=total&ucfs=1&"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-[#7a494d] hover:underline"
+                        >
+                          Ubytování v soukromí Jaronice
+                        </a>
+                    </li>
+                    <li>
+                      • <a 
+                          href="https://www.booking.com/hotel/cz/pension-marislav.cs.html?label=gen173nr-1BCAEoggI46AdIM1gEaDqIAQGYAQW4AQfIAQ3YAQHoAQGIAgGoAgO4Ao7YhMQGwAIB0gIkZGQ3MjBiMDUtYWFmYi00NjA1LWI2ZWEtMzJlN2VhZDRjNmRk2AIF4AIB&sid=e78b70fc82574a9a40bd625c5bf00734&aid=304142&ucfs=1&checkin=2025-09-06&checkout=2025-09-07&dest_id=-552644&dest_type=city&group_adults=1&no_rooms=1&group_children=0&srpvid=21418313b6f1067f&srepoch=1753296422&matching_block_id=138870501_372860814_1_0_0&atlas_src=sr_iw_title"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-[#7a494d] hover:underline"
+                        >
+                          Pension Marislav
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        
+        {/* Accommodation Section - Mobile only */}
+        <div className="mt-12 px-4 md:hidden">
+          <h4 className="text-xl mb-4 font-sans font-semibold text-gray-700">
+            Ubytování
+          </h4>
+          <div className="text-gray-600 font-sans leading-relaxed space-y-3">
+            <p>
+              <strong>Pro rodinu:</strong> Ubytování je zajištěno v objektu! 🏠
+            </p>
+            <p>
+              <strong>Pro přátele:</strong> Preferujeme spaní na zahradě ve stanech nebo obytných vozech! 🏕️
+            </p>
+            <p className="text-sm">
+              Pokud nechcete spát venku, můžete si vybrat z těchto hotelů a zajistit si to sami 😄:
+            </p>
+            <ul className="text-sm space-y-2 text-left">
+              <li>
+                • <a 
+                    href="https://www.booking.com/hotel/cz/rychta-netolice.cs.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaDqIAQGYAQW4AQfIAQ3YAQHoAQH4AQyIAgGoAgO4Ao7YhMQGwAIB0gIkZGQ3MjBiMDUtYWFmYi00NjA1LWI2ZWEtMzJlN2VhZDRjNmRk2AIG4AIB&sid=e78b70fc82574a9a40bd625c5bf00734&all_sr_blocks=117514708_226150141_1_42_0&checkin=2025-09-06&checkout=2025-09-07&dest_id=-552644&dest_type=city&dist=0&group_adults=1&group_children=0&hapos=1&highlighted_blocks=117514708_226150141_1_42_0&hpos=1&matching_block_id=117514708_226150141_1_42_0&nflt=review_score%3D80&no_rooms=1&req_adults=1&req_children=0&room1=A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=117514708_226150141_1_42_0__3900&srepoch=1753295951&srpvid=21418313b6f1067f&type=total&ucfs=1&activeTab=main"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#7a494d] hover:underline"
+                  >
+                    Rychta Netolice
+                  </a>
+              </li>
+              <li>
+                • <a 
+                    href="https://www.booking.com/hotel/cz/ubytovani-v-soukromi-jaronice.cs.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaDqIAQGYAQW4AQfIAQ3YAQHoAQH4AQyIAgGoAgO4Ao7YhMQGwAIB0gIkZGQ3MjBiMDUtYWFmYi00NjA1LWI2ZWEtMzJlN2VhZDRjNmRk2AIG4AIB&sid=e78b70fc82574a9a40bd625c5bf00734&all_sr_blocks=653256004_343457598_2_0_0&checkin=2025-09-06&checkout=2025-09-07&dest_id=-552644&dest_type=city&dist=0&group_adults=1&group_children=0&hapos=2&highlighted_blocks=653256004_343457598_2_0_0&hpos=2&matching_block_id=653256004_343457598_2_0_0&nflt=review_score%3D80%3Bhotelfacility%3D8&no_rooms=1&req_adults=1&req_children=0&room1=A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=653256004_343457598_2_0_0__4000&srepoch=1753296293&srpvid=21418313b6f1067f&type=total&ucfs=1&"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#7a494d] hover:underline"
+                  >
+                    Ubytování v soukromí Jaronice
+                  </a>
+              </li>
+              <li>
+                • <a 
+                    href="https://www.booking.com/hotel/cz/pension-marislav.cs.html?label=gen173nr-1BCAEoggI46AdIM1gEaDqIAQGYAQW4AQfIAQ3YAQHoAQGIAgGoAgO4Ao7YhMQGwAIB0gIkZGQ3MjBiMDUtYWFmYi00NjA1LWI2ZWEtMzJlN2VhZDRjNmRk2AIF4AIB&sid=e78b70fc82574a9a40bd625c5bf00734&aid=304142&ucfs=1&checkin=2025-09-06&checkout=2025-09-07&dest_id=-552644&dest_type=city&group_adults=1&no_rooms=1&group_children=0&srpvid=21418313b6f1067f&srepoch=1753296422&matching_block_id=138870501_372860814_1_0_0&atlas_src=sr_iw_title"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#7a494d] hover:underline"
+                  >
+                    Pension Marislav
+                  </a>
+              </li>
+            </ul>
           </div>
         </div>
       </SectionWrapper>

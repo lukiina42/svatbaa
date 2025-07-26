@@ -131,7 +131,7 @@ export default function Index() {
           style={{ pointerEvents: 'auto' }}
         >
           <span className="mb-2 px-3 py-2 rounded-lg bg-[#7a494d] text-white text-xs md:text-base shadow-lg relative">
-            HAF HAF ZMRDI 🐾
+            BEZ PAMLSKŮ NECHOĎTE 🐕🦴
             <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-[#7a494d]"></span>
           </span>
           <img src={lizaSide} alt="Líza" className="w-full h-auto drop-shadow-2xl" style={{ cursor: 'pointer' }} />
@@ -203,7 +203,7 @@ export default function Index() {
         <Agendas />
       </SectionWrapper>
 
-      <div className="mb-24" id="location">
+      <div className="mb-12" id="location">
         <LocationMap />
       </div>
 

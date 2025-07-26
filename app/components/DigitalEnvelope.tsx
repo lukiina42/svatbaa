@@ -3,23 +3,22 @@ import { useEffect, useRef, useState } from "react";
 const DigitalEnvelope = () => {
   return (
     <div className="w-full px-1 md:px-4">
-      <h4 className="text-3xl font-head font-bold text-center mb-14 pt-10 text-gray-700">
+      <h4 className="text-3xl font-head font-bold text-center text-gray-700">
         Svatební dar
       </h4>
 
-      <div className=" flex justify-evenly flex-col md:flex-row md:flex-wrap">
+      <div className="max-w-2xl pt-4 mx-auto text-center px-4">
+        <p className="text-gray-600 font-sans leading-relaxed mb-4">
+          Nejkrásnější dárek pro nás je ale vaše přítomnost na naší svatbě! 💕
+        </p>
+      </div>
+
+      <div className=" flex justify-evenly pt-4 flex-col md:flex-row md:flex-wrap">
         <div className="px-4 mb-10">
           <DebitCard
             bank="Česká spořitelna"
-            accountNumber="2547892134/0800"
-            name="Danča Skoblíková"
-          />
-        </div>
-        <div className="px-4 mb-10">
-          <DebitCard
-            bank="Komerční banka"
-            accountNumber="1234567890/0100"
-            name="Lukáš Vala"
+            accountNumber="4299886093/0800"
+            name="Společný účet svatebčanů"
           />
         </div>
       </div>
