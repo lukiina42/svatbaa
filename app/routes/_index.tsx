@@ -11,7 +11,7 @@ import Agendas from "~/components/Agendas";
 import LocationMap from "~/components/LocationMap";
 import DigitalEnvelope from "~/components/DigitalEnvelope";
 import MusicPlayer from "~/components/MusicPlayer";
-import lizaSide from "../images/liza-side.png";
+import lizaSide from "~/images/liza-side.png";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -55,6 +55,7 @@ export default function Index() {
   const [isMobile, setIsMobile] = useState(false);
   const [showLiza, setShowLiza] = useState(false);
   const [lizaOut, setLizaOut] = useState(false);
+  const [lizaLoaded, setLizaLoaded] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
@@ -72,7 +73,7 @@ export default function Index() {
 
   useEffect(() => {
     if (!openWelcome) {
-      const timer = setTimeout(() => setShowLiza(true), 3000);
+      const timer = setTimeout(() => setShowLiza(true), 10000);
       return () => clearTimeout(timer);
     }
   }, [openWelcome]);
@@ -130,11 +131,19 @@ export default function Index() {
             ${lizaOut ? 'animate-liza-slide-out' : 'animate-liza-slide-in'}`}
           style={{ pointerEvents: 'auto' }}
         >
-          <span className="mb-2 px-3 py-2 rounded-lg bg-[#7a494d] text-white text-xs md:text-base shadow-lg relative">
-            BEZ PAMLSKŮ NECHOĎTE 🐕🦴
-            <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-[#7a494d]"></span>
-          </span>
-          <img src={lizaSide} alt="Líza" className="w-full h-auto drop-shadow-2xl" style={{ cursor: 'pointer' }} />
+          {lizaLoaded && (
+            <span className="mb-2 px-3 py-2 rounded-lg bg-[#7a494d] text-white text-xs md:text-base shadow-lg relative">
+              BEZ PAMLSKŮ NECHOĎTE 🐕🦴
+              <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-[#7a494d]"></span>
+            </span>
+          )}
+          <img 
+            src={lizaSide} 
+            alt="Líza" 
+            className="w-full h-auto drop-shadow-2xl" 
+            style={{ cursor: 'pointer' }}
+            onLoad={() => setLizaLoaded(true)}
+          />
         </div>
       )}
       <WelcomeModal isOpen={openWelcome} onClose={onCloseWelcomeModal} />
