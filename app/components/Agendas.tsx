@@ -2,8 +2,8 @@ const CALENDAR_URL = `https://www.google.com/calendar/render?
 action=TEMPLATE&
 text=Svatba+Luk%C3%A1%C5%A1+%26+Danča+%F0%9F%92%8C&
 location=Pl%C3%A1stovice+5%2C+Sedlec%2C+%C4%8Cesk%C3%A9+Bud%C4%9Bjovice&
-details=S%20velkou%20radost%C3%AD%20V%C3%A1s%20pozv%C3%A1me%20na%20na%C5%A1i%20svatbu%3A%20Luk%C3%A1%C5%A1%20Vala%20a%20Danča%20Skobl%C3%ADkov%C3%A1.%0A%0AOdkaz%20na%20pozv%C3%A1nku%3A%0Ahttps%3A%2F%2Fwww.lukasdanča.cz%2F%0A%0AByli%20bychom%20r%C3%A1di%2C%20kdybyste%20se%20z%C3%BAčastnili%20na%C5%A1eho%20velk%C3%A9ho%20dne.%0A%0AD%C4%9Bkujeme%20V%C3%A1m%20za%20Va%C5%A1i%20p%C5%99%C3%ADtomnost.%0A%0AS%20l%C3%A1skou%2C%0ALuk%C3%A1%C5%A1%20%26%20Danča&
-dates=20250906T120000Z%2F20250906T200000Z`;
+details=S%20velkou%20radost%C3%AD%20V%C3%A1s%20zveme%20na%20na%C5%A1i%20svatbu%3A%20Luk%C3%A1%C5%A1%20Vala%20a%20Danča%20Skobl%C3%ADkov%C3%A1.%0A%0AOdkaz%20na%20pozv%C3%A1nku%3A%0Ahttps%3A%2F%2Fwww.svatba.lukasvala.net%2F%0A%0AT%C4%9B%C5%A1%C3%ADme%20se%20na%20v%C3%A1s%21%0A%0AZdrav%C3%AD%2C%0ALuk%C3%A1%C5%A1%20%26%20Danča&
+dates=20250906T110000Z%2F20250906T200000Z`;
 
 const Agendas = () => {
   return (
