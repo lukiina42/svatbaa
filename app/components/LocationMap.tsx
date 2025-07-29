@@ -59,7 +59,7 @@ const LocationMap = () => {
                     <strong>Pro rodinu:</strong> Ubytování je zajištěno v objektu! 🏠
                   </p>
                   <p>
-                    <strong>Pro přátele:</strong> Preferujeme spaní na zahradě ve stanech nebo obytných vozech! 🏕️
+                    <strong>Pro přátele:</strong> Je možné spaní na zahradě ve stanech nebo obytných vozech! 🏕️
                   </p>
                   <p className="text-sm">
                     Pokud nechcete spát venku, můžete si vybrat z těchto hotelů a zajistit si to sami 😄:
@@ -112,7 +112,7 @@ const LocationMap = () => {
               <strong>Pro rodinu:</strong> Ubytování je zajištěno v objektu! 🏠
             </p>
             <p>
-              <strong>Pro přátele:</strong> Preferujeme spaní na zahradě ve stanech nebo obytných vozech! 🏕️
+              <strong>Pro přátele:</strong> Je možné spaní na zahradě ve stanech nebo obytných vozech! 🏕️
             </p>
             <p className="text-sm">
               Pokud nechcete spát venku, můžete si vybrat z těchto hotelů a zajistit si to sami 😄:
